@@ -1,11 +1,29 @@
-import react from "react";
+import React from "react";
+import { connect } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './Routes';
 
-class App extends react.Component {
+const Page = (props) => {
 
-  render() {
-    return <h1>Olá</h1>;
-  }
+  return (
+
+    <BrowserRouter>
+      <Routes></Routes>
+    </BrowserRouter>
+  );
+
 }
 
+const mapStateToProps = (state) => {
 
-export default App;
+  return {
+    user:state.user
+  };
+
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return;
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Page);
