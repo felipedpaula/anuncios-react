@@ -16,8 +16,8 @@ const Page = (props) => {
     <BrowserRouter>
 
       <Template>
-        <Header />
-        <Routes/>
+        <Header />     
+          <Routes/>
         <Footer />
       </Template>
 
