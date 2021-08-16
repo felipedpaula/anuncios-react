@@ -66,7 +66,7 @@ export const HeaderArea = styled.div`
                     color:#666;
                 }
                 &.button {
-                    background-color: #00DD00;
+                    background-color: #9bb83c;
                     padding: 7px 12px;
                     border-radius: 5px;
                     color: #FFF;
