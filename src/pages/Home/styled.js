@@ -46,6 +46,29 @@ export const SearchArea = styled.div`
             padding: 0 10px;
         }
     }
+
+    .categoryList {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+
+        .categorieItem {
+            width:25%;
+            display:flex;
+            align-items:center;
+            color:#000;
+            text-decoration: none;
+            height: 50px;
+            margin-bottom:10px;
+
+            img {
+                widht:45px;
+                height:45px;
+                margin-right:10px;
+
+            }
+        }
+    }
 `;
 export const PageArea = styled.div`
     
