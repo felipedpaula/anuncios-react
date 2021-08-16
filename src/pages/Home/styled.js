@@ -61,6 +61,10 @@ export const SearchArea = styled.div`
             height: 50px;
             margin-bottom:10px;
 
+            &:hover {
+                color:#666;
+            }
+
             img {
                 widht:45px;
                 height:45px;
@@ -71,5 +75,19 @@ export const SearchArea = styled.div`
     }
 `;
 export const PageArea = styled.div`
-    
+    .list {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .seeAllLink {
+        color:#000;
+        text-decoration:none;
+        font-weight:bold;
+        display:inline-block;
+        margin-top:10px;
+
+        &:hover {
+            color:#0000FF;
+        }
+    }
 `;
