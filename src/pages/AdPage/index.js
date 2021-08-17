@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import { PageArea } from './styled';
+import { Slide } from 'react-slideshow-image';
 import { PageContainer } from '../../components/MainComponents';
 import { Fake } from './styled';
 import useApi from '../../helpers/OlxAPI';
+import 'react-slideshow-image/dist/styles.css';
 
 
 const Page = () => {
@@ -40,7 +42,16 @@ const Page = () => {
                 <div className="leftSide">
                     <div className="box">
                         <div className="adImage">
-                        {loading && <Fake height={300}/>}
+                            {loading && <Fake height={300}/>}
+                            {adInfo.images &&
+                                <Slide>
+                                    {adInfo.images.map((img, k) => 
+                                        <div key={k} className="slide">
+                                            <img src={img} alt=""/>
+                                        </div>
+                                    )}
+                                </Slide>
+                            }
                         </div>
                         <div className="adInfo">
                             <div className="adName">

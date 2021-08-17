@@ -10,6 +10,7 @@ export const PageArea = styled.div`
     margin-top: 20px;
 
     .box {
+        display: flex;
         background-color: #FFF;
         margin-bottom: 20px;
         border-radius: 4px;
@@ -25,13 +26,27 @@ export const PageArea = styled.div`
         margin-right: 20px;
 
         .adImage {
+            width: 320px;
+            height: 320px;
+            margin-right: 20px;
 
+            .slide img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-size: cover;
+                height: 320px;
+
+            }
         }
         .adInfo {
-            padding: 10px;
-
+            flex: 1;
             .adName {
                 margin-bottom:20px;
+            }
+
+            h3 {
+                margin-bottom: 0;
             }
             .adDescription {
 
