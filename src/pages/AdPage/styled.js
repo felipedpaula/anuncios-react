@@ -56,5 +56,35 @@ export const PageArea = styled.div`
 
     .rightSide {
         width: 250px;
+
+        .price span {
+            color: #0000FF;
+            display: block;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .contacSellerLink {
+            background-color: #0000FF;
+            padding: 7px 0;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            text-decoration: none;
+            margin-bottom: 20px;
+            -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.3); 
+            box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.3);
+        }
+
+        .createdBy {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                margin: 0;
+            }
+        }
     }
 `;
